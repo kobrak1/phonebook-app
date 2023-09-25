@@ -11,10 +11,10 @@ Data storage and retrieval using a JSON server.\
 Responsive and user-friendly design.\
 
 # Built With
-- React.js\
-- Axios (for making HTTP requests)\
-- JSON Server (for data storage and retrieval)\
-- HTML and CSS for styling\
+- React.js
+- Axios (for making HTTP requests)
+- JSON Server (for data storage and retrieval)
+- HTML and CSS for styling
 
 # Usage
 Users can easily add new contacts, search for existing ones, and manage their phonebook with this intuitive and efficient web application.
