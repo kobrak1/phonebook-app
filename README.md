@@ -17,4 +17,9 @@ Responsive and user-friendly design.
 - HTML and CSS for styling
 
 # Usage
-Users can easily add new contacts, search for existing ones, and manage their phonebook with this intuitive and efficient web application.
+Steps;
+1- Clone the project to your PC by running the "git clone https://github.com/kobrak1/phonebook-app" command.
+2- Open two terminals, one is ro run the react application, the other one is to run the json server.
+3- Run "npm run dev" or "yarn dev" commands on the first terminal.
+4- Go on the second terminal and go to the src directory and run "npm run server" or "yarn server" command to run the json server.
+5- Now, you are all set.
