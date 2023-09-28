@@ -1,20 +1,116 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    color: rgb(116, 114, 114);
+    background-color: #f1f1ff;
 }
 
-div {
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh;
+    /* background-image: url('./assets/bg_img2.avif'); */
+    background-size: cover;
+}
+
+.main-container {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    justify-content: center;
+    background-color: #f2f2f5;
+    min-height: 500px;
+    min-width: 450px;
+    max-width: 600px;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgb(151, 231, 231);
+    padding: .5rem 1rem 2rem;
+    margin: 3rem 1rem;
 }
 
 h1 {
-    color:green;
-    font-style: italic;
+    font-weight: 200;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
 }
 
+h2 {
+    font-weight: 200;
+}
+
+/* CSS to style the container for name, number, and delete button */
+.person-info {
+    display: flex; /* Display children in a row */
+    justify-content: space-between; /* Space between children */
+    align-items: center; /* Vertically center-align children */
+}
+
+/* Optional: Style for the "Delete" button */
+.person-info button {
+    background-color: rgb(102, 186, 255);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgb(151, 231, 231);
+    transition: .2s ease;
+}
+.person-info button:hover {
+    background-color: rgb(102, 186, 255, .8);
+    box-shadow: 0 0 15px rgb(125, 153, 209);
+}
+
+/* CSS to style the form fields */
+.person-form {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Adjust column widths as needed */
+    gap: 1rem; /* Adjust gap between fields */
+  }
+form label {
+    font-weight: 200;
+}
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  input {
+    padding: 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 15px rgb(151, 231, 231);
+  }
+
+  
+  .form-btn button {
+    grid-column: span 2; /* Make the button span both columns */
+    text-align: right;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    color: #ffff;
+    transition: .2s ease;
+    background-color: rgb(159, 157, 157);
+    box-shadow: 0 0 15px rgb(151, 231, 231);
+  }
+  .form-btn button:hover {
+    box-shadow: 0 0 15px rgb(125, 153, 209);
+  }
+  
+
+/* error message styling */
 .error {
     color: red;
+    box-shadow: 0 0 15px rgb(232, 135, 135);
     background: lightgrey;
     font-size: 20px;
     border-style: solid;
@@ -24,7 +120,8 @@ h1 {
   }
 
   .success {
-    color: green;
+    color: rgb(13, 156, 13);
+    box-shadow: 0 0 15px rgb(135, 232, 166);
     background: lightgrey;
     font-size: 20px;
     border-style: solid;

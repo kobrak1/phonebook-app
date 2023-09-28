@@ -11,10 +11,14 @@ const Persons = ({persons, filtered, removePerson}) => {
   return (
     <ul style={{ listStyleType: 'none' }}>
       {filteredPersons.map(e => 
-      <li key={e.id}>
-         {e.name}  {e.number} 
-         <button onClick={() => removePerson(e.id)}>Delete</button>
-      </li> 
+      <li className='person-list' key={e.id}>
+        <div className="person-info">
+          <span>
+            {e.name}  {e.number}
+          </span> 
+          <button onClick={() => removePerson(e.id)}>Delete</button>
+        </div> <hr />
+      </li>
       )}
     </ul>
   )
@@ -23,8 +27,8 @@ const Persons = ({persons, filtered, removePerson}) => {
 // filter component
 const Filter = ({filtered, setFiltered}) => {
   return(
-    <div>
-      Filter by name:
+    <div className='filter-name'>
+      <p>Filter by name:</p>
       <input 
       type="text"
       value={filtered}
@@ -36,31 +40,40 @@ const Filter = ({filtered, setFiltered}) => {
 }
 
 // form Component
-const PersonForm = ({addUser, newName, setNewName, newNumber, setNewNumber}) => {
-  return(
-    <form onSubmit={addUser}>
-      <div>
-        Name: <input
-          type='text'
+const PersonForm = ({ addUser, newName, setNewName, newNumber, setNewNumber }) => {
+  return (
+    <form onSubmit={addUser} className="person-form">
+      <div className="form-field">
+        <label htmlFor="name">Name:</label>
+        <input
+          type="text"
+          id="name"
           value={newName}
-          onChange={(e) => setNewName(e.target.value)}  
-          required/>
+          onChange={(e) => setNewName(e.target.value)}
+          placeholder='john doe...'
+          required
+        />
       </div>
-      <div>
-        Number: <input 
+      <div className="form-field">
+        <label htmlFor="number">Number:</label>
+        <input
           type="tel"
+          id="number"
           value={newNumber}
           onChange={(e) => setNewNumber(e.target.value)}
           minLength={4}
           maxLength={15}
-          required />
+          placeholder="+1-555-555-1234"
+          required
+        />
       </div>
-      <div>
-        <button type='submit'>add</button>
+      <div className="form-btn">
+        <button type="submit">Add</button>
       </div>
     </form>
-  )
-}
+  );
+};
+
 // error message component
 const Notification = ({errorMessage, successMessage}) => {
   if (errorMessage) {
@@ -169,22 +182,24 @@ const App = () => {
   
 
   return (
-    <div>
-      <h1>Phonebook</h1>
-      <Filter filtered={filtered} setFiltered={setFiltered} />
-      <h2>Add New</h2>
-      <Notification errorMessage={errorMessage} successMessage={successMessage} />
-      <PersonForm 
-        addUser={addUser} 
-        newName={newName} 
-        setNewName={setNewName} 
-        newNumber={newNumber} 
-        setNewNumber={setNewNumber} />
-      <h2>Numbers</h2>
-      <Persons 
-        persons={persons} 
-        filtered={filtered} 
-        removePerson={removePerson} /> 
+    <div className='general'>
+      <div className="main-container">
+        <h1>Phonebook</h1>
+        <Filter filtered={filtered} setFiltered={setFiltered} />
+        <h2>Add New</h2>
+        <Notification errorMessage={errorMessage} successMessage={successMessage} />
+        <PersonForm 
+          addUser={addUser} 
+          newName={newName} 
+          setNewName={setNewName} 
+          newNumber={newNumber} 
+          setNewNumber={setNewNumber} />
+        <h2>Numbers</h2>
+        <Persons 
+          persons={persons} 
+          filtered={filtered} 
+          removePerson={removePerson} /> 
+      </div>
     </div>
   )
 }
