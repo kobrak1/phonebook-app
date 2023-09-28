@@ -62,6 +62,7 @@ Before you begin, ensure you have the following software installed:
 
    - Click on "Add New" to add new contacts.
    - Use the search bar to filter contacts by name.
+   - Update the phone number of a person on the list.
    - Click on "Delete" to remove a contact from the list.
 
 3. Enjoy using the Phonebook App!
