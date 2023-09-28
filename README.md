@@ -1,6 +1,4 @@
-Writing a README.md file is a good practice to provide documentation and instructions for your React app. Below is an example of a README.md file for your React phonebook app:
 
-```markdown
 # Phonebook App
 
 Phonebook App is a simple web application built with React that allows users to manage their contacts' names and phone numbers. You can add new contacts, search for existing contacts, update phone numbers, and delete contacts.
@@ -81,6 +79,3 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-You can replace the placeholders with your actual project details. This README.md provides an overview of the app, how to get started, usage instructions, contributing guidelines, and licensing information.
