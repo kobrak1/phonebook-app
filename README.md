@@ -53,19 +53,25 @@ Before you begin, ensure you have the following software installed:
 1. Start the development server:
 
    ```bash
-   npm start
+   npm run dev
    ```
 
    This will run the app in development mode and open it in your default web browser. You can access it at [http://localhost:3000](http://localhost:3000).
 
-2. Use the app to manage your contacts:
+   ```bash
+   npm run server
+   ```
+
+   This will run the JSON Server and open it in your default web browser.
+
+3. Use the app to manage your contacts:
 
    - Click on "Add New" to add new contacts.
    - Use the search bar to filter contacts by name.
    - Update the phone number of a person on the list.
    - Click on "Delete" to remove a contact from the list.
 
-3. Enjoy using the Phonebook App!
+4. Enjoy using the Phonebook App!
 
 ## Contributing
 
