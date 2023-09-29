@@ -59,16 +59,18 @@ Before running the Phonebook App, make sure you have the following software inst
 
 1.  Split your terminal or open 2 different terminals, one is for the development server the other one is for the JSON server.
 2.  Start the JSON server:\
-    First, go to the src directory
-      ```bash
-   cd src
+   First, go to the src directory
+
+   ```bash
+   npm run server
    ```
-   then run the JSON server
+   then run the JSON server.
+
    ```bash
    npm run server
    ```
    or
-      ```bash
+   ```bash
    yarn server
    ```
 
@@ -78,7 +80,7 @@ Before running the Phonebook App, make sure you have the following software inst
    npm run dev
    ```
    or
-      ```bash
+   ```bash
    yarn dev
    ```
 
