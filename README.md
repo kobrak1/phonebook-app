@@ -58,7 +58,11 @@ Before running the Phonebook App, make sure you have the following software inst
 ## Usage
 
 1. Start the JSON server:
-
+   -Go to the src directory
+      ```bash
+   cd src
+   ```
+   then run the JSON server
    ```bash
    npm run server
    ```
@@ -67,7 +71,7 @@ Before running the Phonebook App, make sure you have the following software inst
    yarn server
    ```
 
-2. Start the development server:
+3. Start the development server:
 
    ```bash
    npm run dev
