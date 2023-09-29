@@ -62,7 +62,7 @@ Before running the Phonebook App, make sure you have the following software inst
    First, go to the src directory
 
    ```bash
-   npm run server
+   cd src
    ```
    then run the JSON server.
 
