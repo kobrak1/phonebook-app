@@ -57,19 +57,33 @@ Before running the Phonebook App, make sure you have the following software inst
 
 ## Usage
 
-1. Start the development server:
+1. Start the JSON server:
 
    ```bash
-   npm start
+   npm run dev
+   ```
+   or
+      ```bash
+   yarn dev
    ```
 
-2. Open your web browser and visit [http://localhost:3000](http://localhost:3000) to access the Phonebook App.
+2. Start the development server:
 
-3. Use the app to add, update, filter, and delete contacts as needed.
+   ```bash
+   npm run dev
+   ```
+   or
+      ```bash
+   yarn dev
+   ```
+
+4. Open your web browser and visit [http://localhost:3000](http://localhost:5173) to access the Phonebook App.
+
+5. Use the app to add, update, filter, and delete contacts as needed.
 
 ## Contributing
 
-Contributions are welcome! If you have suggestions, bug reports, or want to contribute to the project, please follow these steps:
+Contributions are welcome! If you have suggestions, or bug reports, or want to contribute to the project, please follow these steps:
 
 1. Fork the repository.
 
