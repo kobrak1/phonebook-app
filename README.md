@@ -1,3 +1,4 @@
+![phonebook1](https://github.com/kobrak1/phonebook-app/assets/114083611/d08dd5e2-cd49-46bd-a6df-756852a32e24)
 
 # Phonebook App
 
