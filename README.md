@@ -57,8 +57,9 @@ Before running the Phonebook App, make sure you have the following software inst
 
 ## Usage
 
-1. Start the JSON server:\
-   -Go to the src directory
+1.  Split your terminal or open 2 different terminals, one is for the development server the other one is for the JSON server.
+2.  Start the JSON server:\
+    First, go to the src directory
       ```bash
    cd src
    ```
