@@ -57,7 +57,7 @@ Before running the Phonebook App, make sure you have the following software inst
 
 ## Usage
 
-1. Start the JSON server:
+1. Start the JSON server:\
    -Go to the src directory
       ```bash
    cd src
